@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Slide Styles */
+  .welcome {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card-preview {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+    background: #f8f9fa;
+    width: 300px;
+    height: 570px;
+    margin-left: 170px;
+    margin-top: 90px;
+    border: 7px solid rgb(70, 30, 5);
+    
+    /* Background image with adjustments */
+    background-image: url('https://i.pinimg.com/736x/d1/22/dc/d122dce0d44c4844bc9129d4136abef2.jpg');
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image within the element */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+  
+  .editable-text {
+    position: absolute;
+    cursor: move;
+    font-size: 18px;
+    color: #333;
+    resize: both;
+    overflow: auto;
+    min-height: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Automatically adjust height based on content */
+    white-space: pre-wrap; /* Ensure new lines are properly wrapped */
+  }
+  
+  
+
+
+  .options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .options input, .options button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    height: 100vh; 
+  }
+
+ 
+  .left {
+    flex: 1;
+   
+  }
+
+  .right {
+    flex: 1; 
+   
+  }
+  .output-text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 2s;
+  }
+
+  .fade-out {
+    animation: fadeOut 2s;
+  }
+
+  .slide-in {
+    animation: slideIn 2s;
+  }
+
+  .slide-out {
+    animation: slideOut 2s;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-row select, .form-row textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .form-column select {
+    padding: 8px;
+  }
+
+  
+  .information{
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+  

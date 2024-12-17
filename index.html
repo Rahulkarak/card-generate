@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide welcome">
+        <div class="container">
+            <div class="left">
+                <div class="card-preview" id="card-preview-slide1">
+                    <div class="editable-text" id="editable-text-slide1" contenteditable="true">we invite you and your familys gracious presence and blessinig</div>
+                  </div>
+            </div>
+            <div class="right">
+                <div class="options">
+                    <h1>Welcome to the Wedding Card Generator</h1>
+                    <p>Create your perfect card in minutes!</p>
+                    <form id="textInputForm">
+                        <label for="userText">Enter your text:</label>
+                        <input type="text" id="userText" name="userText" placeholder="Type something..." required>
+                        <button type="submit">Submit</button>
+                      </form>
+                  </div>
+            </div>
+          </div>
+        
+        
+      </div>
+
+      <!-- Slide 2 -->
+     
+      <div class="swiper-slide welcome">
+        <div class="container">
+            <div class="left">
+                <div class="card-preview" id="card-preview-slide1">
+                    <div class="editable-text" id="editable-text-slide2" contenteditable="true">we invite you and your familys gracious presence and blessinig</div>
+                  </div>
+            </div>
+            <div class="right">
+                <div class="options">
+                    <h1>Welcome to the Wedding Card Generator</h1>
+                    <p>Create your perfect card in minutes!</p>
+                    <form id="textInputForm">
+                        <label for="userText">Enter your text:</label>
+                        <input type="text" id="userText" name="userText" placeholder="Type something..." required>
+                        <button type="submit">Submit</button>
+                      </form>
+                  </div>
+            </div>
+          </div>
+        
+        
+      </div>
+
+
+      <!-- Slide 3 -->
+<div class="swiper-slide">
+    <div class="container">
+      <div class="left">
+        <div class="card-preview" id="final-preview"></div>
+      </div>
+      <div class="right">
+        <div class="information">
+          <div class="form-inputs">
+          
+            <div class="form-row">
+              <label for="language">Choose Language:</label>
+              <select id="language" name="language">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="spanish">Spanish</option>
+              
+              </select>
+            </div>
+  
+           
+            <div class="form-row">
+              <label for="content">Enter Content:</label>
+              <textarea id="content" name="content" placeholder="Write your content here..."></textarea>
+            </div>
+  
+           
+            <div class="form-row">
+              <div class="form-column">
+                <label for="font">Choose Font:</label>
+                <select id="font" name="font">
+                  <option value="Arial">Arial</option>
+                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Verdana">Verdana</option>
+                  
+                </select>
+              </div>
+              <div class="form-column">
+                <label for="font-style">Choose Font Style:</label>
+                <select id="font-style" name="font-style">
+                  <option value="normal">Normal</option>
+                  <option value="italic">Italic</option>
+                  <option value="bold">Bold</option>
+                </select>
+              </div>
+            </div>
+  
+           
+            <div class="form-row">
+              <div class="form-column">
+                <label for="text-size">Choose Text Size:</label>
+                <select id="text-size" name="text-size">
+                  <option value="12px">12px</option>
+                  <option value="16px">16px</option>
+                  <option value="20px">20px</option>
+                  <option value="24px">24px</option>
+                </select>
+              </div>
+              <div class="form-column">
+                <label for="text-color">Choose Text Color:</label>
+                <select id="text-color" name="text-color">
+                  <option value="black">Black</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                </select>
+              </div>
+              <div class="form-column">
+                <label for="text-align">Choose Alignment:</label>
+                <select id="text-align" name="text-align">
+                  <option value="left">Left</option>
+                  <option value="center">Center</option>
+                  <option value="right">Right</option>
+                </select>
+              </div>
+              <div class="form-column">
+                <label for="line-height">Choose Line Height:</label>
+                <select id="line-height" name="line-height">
+                  <option value="1.2">1.2</option>
+                  <option value="1.5">1.5</option>
+                  <option value="1.8">1.8</option>
+                </select>
+              </div>
+            </div>
+  
+           
+            <div class="form-row">
+              <div class="form-column">
+                <label for="start-animation">Choose Start Animation:</label>
+                <select id="start-animation" name="start-animation">
+                  <option value="fadeIn">Fade In</option>
+                  <option value="slideIn">Slide In</option>
+                  <option value="zoomIn">Zoom In</option>
+                </select>
+              </div>
+              <div class="form-column">
+                <label for="end-animation">Choose End Animation:</label>
+                <select id="end-animation" name="end-animation">
+                  <option value="fadeOut">Fade Out</option>
+                  <option value="slideOut">Slide Out</option>
+                  <option value="zoomOut">Zoom Out</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      
+    </div>
+
+   
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+ 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
